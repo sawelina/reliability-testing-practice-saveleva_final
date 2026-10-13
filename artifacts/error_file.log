@@ -1,0 +1,1097 @@
+Attaching to selenide-reportportal_elasticsearch_1_7c7167020fb5, selenide-reportportal_rabbitmq_1_afafb8a86a64, selenide-reportportal_ui_1_7386d0e1b66b, selenide-reportportal_uat_1_83f42193d065, selenide-reportportal_postgres_1_b561d6613aab, selenide-reportportal_gateway_1_ed7b96ae30a4, selenide-reportportal_minio_1_91529202baad, selenide-reportportal_analyzer_1_da620d9dd565, selenide-reportportal_index_1_e88c6d291a08, selenide-reportportal_db-scripts_1_5d73960de9b0, selenide-reportportal_api_1_35fb1bd5ace7
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:32.862 [info] <0.219.0> 
+[33mrabbitmq_1_afafb8a86a64 |[0m  Starting RabbitMQ 3.7.16 on Erlang 22.0.7
+[33mrabbitmq_1_afafb8a86a64 |[0m  Copyright (C) 2007-2019 Pivotal Software, Inc.
+[33mrabbitmq_1_afafb8a86a64 |[0m  Licensed under the MPL.  See https://www.rabbitmq.com/
+[33mrabbitmq_1_afafb8a86a64 |[0m 
+[33mrabbitmq_1_afafb8a86a64 |[0m   ##  ##
+[33mrabbitmq_1_afafb8a86a64 |[0m   ##  ##      RabbitMQ 3.7.16. Copyright (C) 2007-2019 Pivotal Software, Inc.
+[33mrabbitmq_1_afafb8a86a64 |[0m   ##########  Licensed under the MPL.  See https://www.rabbitmq.com/
+[33mrabbitmq_1_afafb8a86a64 |[0m   ######  ##
+[33mrabbitmq_1_afafb8a86a64 |[0m   ##########  Logs: <stdout>
+[33mrabbitmq_1_afafb8a86a64 |[0m 
+[33mrabbitmq_1_afafb8a86a64 |[0m               Starting broker...
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:32.879 [info] <0.219.0> 
+[33mrabbitmq_1_afafb8a86a64 |[0m  node           : rabbit@6c5eef5219da
+[33mrabbitmq_1_afafb8a86a64 |[0m  home dir       : /var/lib/rabbitmq
+[33mrabbitmq_1_afafb8a86a64 |[0m  config file(s) : /etc/rabbitmq/rabbitmq.conf
+[33mrabbitmq_1_afafb8a86a64 |[0m  cookie hash    : +BjAa9pHWbHNeQ4PRwdSLA==
+[33mrabbitmq_1_afafb8a86a64 |[0m  log(s)         : <stdout>
+[33mrabbitmq_1_afafb8a86a64 |[0m  database dir   : /var/lib/rabbitmq/mnesia/rabbit@6c5eef5219da
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.386 [info] <0.219.0> Running boot step pre_boot defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.386 [info] <0.219.0> Running boot step rabbit_core_metrics defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.386 [info] <0.219.0> Running boot step rabbit_alarm defined by app rabbit
+[36melasticsearch_1_7c7167020fb5 |[0m OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[36melasticsearch_1_7c7167020fb5 |[0m {"type": "server", "timestamp": "2020-08-22T08:24:23,332+0000", "level": "WARN", "component": "o.e.b.ElasticsearchUncaughtExceptionHandler", "cluster.name": "docker-cluster", "node.name": "f6e4e6391df7",  "message": "uncaught exception in thread [main]" , 
+[36melasticsearch_1_7c7167020fb5 |[0m "stacktrace": ["org.elasticsearch.bootstrap.StartupException: ElasticsearchException[failed to bind service]; nested: AccessDeniedException[/usr/share/elasticsearch/data/nodes];",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:163) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:150) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:115) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "Caused by: org.elasticsearch.ElasticsearchException: failed to bind service",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:617) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "... 6 more",
+[36melasticsearch_1_7c7167020fb5 |[0m "Caused by: java.nio.file.AccessDeniedException: /usr/share/elasticsearch/data/nodes",
+[36melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116) ~[?:?]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389) ~[?:?]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectory(Files.java:692) ~[?:?]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createAndCheckIsDirectory(Files.java:799) ~[?:?]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectories(Files.java:785) ~[?:?]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.lambda$new$0(NodeEnvironment.java:272) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment$NodeLock.<init>(NodeEnvironment.java:209) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:269) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:278) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "... 6 more"] }
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.389 [info] <0.227.0> Memory high watermark set to 9604 MiB (10071400448 bytes) of 24012 MiB (25178501120 bytes) total
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.392 [info] <0.229.0> Enabling free disk space monitoring
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.392 [info] <0.229.0> Disk free limit set to 50MB
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.394 [info] <0.219.0> Running boot step code_server_cache defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.394 [info] <0.219.0> Running boot step file_handle_cache defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.394 [info] <0.232.0> Limiting to approx 1048476 file handles (943626 sockets)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.394 [info] <0.233.0> FHC read buffering:  OFF
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.395 [info] <0.233.0> FHC write buffering: ON
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.395 [info] <0.219.0> Running boot step worker_pool defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.395 [info] <0.220.0> Will use 8 processes for default worker pool
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.395 [info] <0.220.0> Starting worker pool 'worker_pool' with 8 processes in it
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.395 [info] <0.219.0> Running boot step database defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.395 [info] <0.219.0> Node database directory at /var/lib/rabbitmq/mnesia/rabbit@6c5eef5219da is empty. Assuming we need to join an existing cluster or initialise from scratch...
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.395 [info] <0.219.0> Configured peer discovery backend: rabbit_peer_discovery_classic_config
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.396 [info] <0.219.0> Will try to lock with peer discovery backend rabbit_peer_discovery_classic_config
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.396 [info] <0.219.0> Peer discovery backend does not support locking, falling back to randomized delay
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.396 [info] <0.219.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping randomized startup delay.
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.396 [info] <0.219.0> All discovered existing cluster peers: 
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.396 [info] <0.219.0> Discovered no peer nodes to cluster with
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:36.397 [info] <0.43.0> Application mnesia exited with reason: stopped
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.407 [info] <0.219.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.532 [info] <0.219.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.663 [info] <0.219.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.664 [info] <0.219.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.664 [info] <0.219.0> Running boot step database_sync defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.664 [info] <0.219.0> Running boot step codec_correctness_check defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.664 [info] <0.219.0> Running boot step external_infrastructure defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.664 [info] <0.219.0> Running boot step rabbit_registry defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.664 [info] <0.219.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.664 [info] <0.219.0> Running boot step rabbit_queue_location_random defined by app rabbit
+[32mui_1_7386d0e1b66b |[0m time="2020-08-22T08:24:21Z" level=info msg="Starting on port 8080"
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.664 [info] <0.219.0> Running boot step rabbit_event defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.664 [info] <0.219.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.664 [info] <0.219.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.665 [info] <0.219.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.665 [info] <0.219.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.665 [info] <0.219.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.665 [info] <0.219.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.665 [info] <0.219.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.665 [info] <0.219.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.665 [info] <0.219.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.665 [info] <0.219.0> Running boot step rabbit_priority_queue defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.665 [info] <0.219.0> Priority queues enabled, real BQ is rabbit_variable_queue
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.665 [info] <0.219.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.665 [info] <0.219.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.666 [info] <0.219.0> Running boot step kernel_ready defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.666 [info] <0.219.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.666 [info] <0.219.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.668 [info] <0.219.0> Running boot step guid_generator defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.734 [info] <0.219.0> Running boot step rabbit_node_monitor defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.734 [info] <0.409.0> Starting rabbit_node_monitor
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.734 [info] <0.219.0> Running boot step delegate_sup defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.734 [info] <0.219.0> Running boot step rabbit_memory_monitor defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.735 [info] <0.219.0> Running boot step core_initialized defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.735 [info] <0.219.0> Running boot step upgrade_queues defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.764 [info] <0.219.0> message_store upgrades: 1 to apply
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.764 [info] <0.219.0> message_store upgrades: Applying rabbit_variable_queue:move_messages_to_vhost_store
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.764 [info] <0.219.0> message_store upgrades: No durable queues found. Skipping message store migration
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.764 [info] <0.219.0> message_store upgrades: Removing the old message store data
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.764 [info] <0.219.0> message_store upgrades: All upgrades applied successfully
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.896 [info] <0.219.0> Running boot step rabbit_connection_tracking defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.896 [info] <0.219.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.896 [info] <0.219.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.897 [info] <0.219.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.897 [info] <0.219.0> Running boot step rabbit_policies defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.898 [info] <0.219.0> Running boot step rabbit_policy defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.898 [info] <0.219.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.898 [info] <0.219.0> Running boot step rabbit_vhost_limit defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.899 [info] <0.219.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.899 [info] <0.219.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.899 [info] <0.219.0> Management plugin: using rates mode 'basic'
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.899 [info] <0.219.0> Running boot step recovery defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.904 [info] <0.219.0> Running boot step load_definitions defined by app rabbitmq_management
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.904 [info] <0.219.0> Running boot step empty_db_check defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:39.904 [info] <0.219.0> Adding vhost '/'
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.500 [info] <0.450.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@6c5eef5219da/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.568 [info] <0.450.0> Starting message stores for vhost '/'
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.568 [info] <0.454.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.569 [info] <0.450.0> Started message store of type transient for vhost '/'
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.569 [info] <0.457.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.569 [warning] <0.457.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.570 [info] <0.450.0> Started message store of type persistent for vhost '/'
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.572 [info] <0.219.0> Creating user 'rabbitmq'
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.662 [info] <0.219.0> Setting user tags for user 'rabbitmq' to [administrator]
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.730 [info] <0.219.0> Setting permissions for 'rabbitmq' in '/' to '.*', '.*', '.*'
+[35muat_1_83f42193d065 |[0m 
+[35muat_1_83f42193d065 |[0m     ____                        __  ____             __        __
+[35muat_1_83f42193d065 |[0m    / __ \___  ____  ____  _____/ /_/ __ \____  _____/ /_____ _/ /
+[35muat_1_83f42193d065 |[0m   / /_/ / _ \/ __ \/ __ \/ ___/ __/ /_/ / __ \/ ___/ __/ __ `/ /
+[35muat_1_83f42193d065 |[0m  / _, _/  __/ /_/ / /_/ / /  / /_/ ____/ /_/ / /  / /_/ /_/ / /
+[35muat_1_83f42193d065 |[0m /_/ |_|\___/ .___/\____/_/   \__/_/    \____/_/   \__/\__,_/_/
+[35muat_1_83f42193d065 |[0m           /_/
+[35muat_1_83f42193d065 |[0m                 Authorization Service: 5.3.0
+[35muat_1_83f42193d065 |[0m                 Built with ♡ by EPAM Systems
+[35muat_1_83f42193d065 |[0m                 Spring Boot  (v2.2.5.RELEASE)
+[35muat_1_83f42193d065 |[0m 
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:27.008  INFO 9 --- [           main] c.e.r.auth.AuthServerApplication         : Starting AuthServerApplication on 68c40e75c433 with PID 9 (/service-authorization-5.3.0-exec.jar started by root in /)
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:27.013  INFO 9 --- [           main] c.e.r.auth.AuthServerApplication         : The following profiles are active: default
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:28.475  INFO 9 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:28.802  INFO 9 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 319ms. Found 30 JPA repository interfaces.
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:32.390  INFO 9 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:32.423  INFO 9 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:32.423  INFO 9 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:32.549  INFO 9 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:32.550  INFO 9 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5420 ms
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:32.757  INFO 9 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:33.086  INFO 9 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:34.209  INFO 9 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:34.382  INFO 9 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:34.958  INFO 9 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:44.035  INFO 9 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: com.epam.ta.reportportal.commons.JsonbAwarePostgresDialect
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:46.363  INFO 9 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:46.374  INFO 9 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:48.484  WARN 9 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[35muat_1_83f42193d065 |[0m WARNING: An illegal reflective access operation has occurred
+[35muat_1_83f42193d065 |[0m WARNING: Illegal reflective access by org.springframework.security.saml.saml2.metadata.NameIdFormat (jar:file:/service-authorization-5.3.0-exec.jar!/BOOT-INF/lib/spring-security-saml2-core-2.0.0.M31.jar!/) to field java.lang.Enum.name
+[35muat_1_83f42193d065 |[0m WARNING: Please consider reporting this to the maintainers of org.springframework.security.saml.saml2.metadata.NameIdFormat
+[35muat_1_83f42193d065 |[0m WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[35muat_1_83f42193d065 |[0m WARNING: All illegal access operations will be denied in a future release
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:50.146  INFO 9 --- [           main] o.o.core.config.InitializationService    : Initializing OpenSAML using the Java Services API
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:51.643  WARN 9 --- [           main] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:51.985 DEBUG 9 --- [           main] .s.o.p.e.FrameworkEndpointHandlerMapping : 8 mappings in 'oauth2EndpointHandlerMapping'
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:53.145  INFO 9 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:53.223  WARN 9 --- [ ConnectionPool] okhttp3.OkHttpClient                     : A connection to http://minio:9000/ was leaked. Did you forget to close a response body? To see where this was allocated, set the OkHttpClient logger level to FINE: Logger.getLogger(OkHttpClient.class.getName()).setLevel(Level.FINE);
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:53.276  INFO 9 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:53.561  INFO 9 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:53.890 DEBUG 9 --- [           main] s.c.a.w.c.WebSecurityConfigurerAdapter$2 : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.319 DEBUG 9 --- [           main] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {org.springframework.boot.autoconfigure.security.servlet.WebSecurityEnablerConfiguration=org.springframework.boot.autoconfigure.security.servlet.WebSecurityEnablerConfiguration@2cd2c764}
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.814 [info] <0.219.0> Running boot step rabbit_looking_glass defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.814 [info] <0.219.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.814 [info] <0.219.0> Running boot step background_gc defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.815 [info] <0.219.0> Running boot step connection_tracking defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:40.882 [info] <0.219.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@6c5eef5219da
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:41.007 [info] <0.219.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@6c5eef5219da
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.359  INFO 9 --- [           main] SamlServiceProviderSecurityConfiguration : Configuring SAML SP on pattern:/saml/sp/**
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.438 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'fullyAuthenticated', for Ant [pattern='/sso/oauth/token']
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:41.008 [info] <0.219.0> Running boot step routing_ready defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:41.008 [info] <0.219.0> Running boot step pre_flight defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:41.008 [info] <0.219.0> Running boot step notify_cluster defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:41.008 [info] <0.219.0> Running boot step networking defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:41.009 [warning] <0.489.0> Setting Ranch options together with socket options is deprecated. Please use the new map syntax that allows specifying socket options separately from other options.
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:41.009 [info] <0.503.0> started TCP listener on [::]:5672
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:41.010 [info] <0.219.0> Running boot step direct_client defined by app rabbit
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:41.049 [info] <0.562.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:41.049 [info] <0.668.0> Statistics database started.
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:41.050 [info] <0.667.0> Starting worker pool 'management_worker_pool' with 3 processes in it
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:41.131 [info] <0.8.0> Server startup complete; 3 plugins started.
+[33mrabbitmq_1_afafb8a86a64 |[0m  * rabbitmq_management
+[33mrabbitmq_1_afafb8a86a64 |[0m  * rabbitmq_web_dispatch
+[33mrabbitmq_1_afafb8a86a64 |[0m  * rabbitmq_management_agent
+[33mrabbitmq_1_afafb8a86a64 |[0m  completed with 3 plugins.
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.440 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasAuthority('ROLE_INTERNAL')', for Ant [pattern='/sso/oauth/token_key']
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:44.626 [info] <0.678.0> accepting AMQP connection <0.678.0> (172.19.0.9:54948 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:44.685 [error] <0.678.0> Error on AMQP connection <0.678.0> (172.19.0.9:54948 -> 172.19.0.3:5672, user: 'rabbitmq', state: opening):
+[33mrabbitmq_1_afafb8a86a64 |[0m vhost analyzer not found
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.441 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasAuthority('ROLE_INTERNAL')', for Ant [pattern='/sso/oauth/check_token']
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:44.686 [info] <0.678.0> closing AMQP connection <0.678.0> (172.19.0.9:54948 -> 172.19.0.3:5672, vhost: 'none', user: 'rabbitmq')
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:44.699 [info] <0.685.0> accepting AMQP connection <0.685.0> (172.19.0.9:54952 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:44.705 [error] <0.685.0> Error on AMQP connection <0.685.0> (172.19.0.9:54952 -> 172.19.0.3:5672, user: 'rabbitmq', state: opening):
+[33mrabbitmq_1_afafb8a86a64 |[0m vhost analyzer not found
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:44.706 [info] <0.685.0> closing AMQP connection <0.685.0> (172.19.0.9:54952 -> 172.19.0.3:5672, vhost: 'none', user: 'rabbitmq')
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:44.817 [info] <0.691.0> accepting AMQP connection <0.691.0> (172.19.0.9:54964 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:44.831 [error] <0.691.0> Error on AMQP connection <0.691.0> (172.19.0.9:54964 -> 172.19.0.3:5672, user: 'rabbitmq', state: opening):
+[33mrabbitmq_1_afafb8a86a64 |[0m vhost analyzer not found
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:44.832 [info] <0.691.0> closing AMQP connection <0.691.0> (172.19.0.9:54964 -> 172.19.0.3:5672, vhost: 'none', user: 'rabbitmq')
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:44.975 [info] <0.697.0> accepting AMQP connection <0.697.0> (172.19.0.9:54968 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:44.977 [error] <0.697.0> Error on AMQP connection <0.697.0> (172.19.0.9:54968 -> 172.19.0.3:5672, user: 'rabbitmq', state: opening):
+[33mrabbitmq_1_afafb8a86a64 |[0m vhost analyzer not found
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.449 DEBUG 9 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:44.978 [info] <0.697.0> closing AMQP connection <0.697.0> (172.19.0.9:54968 -> 172.19.0.3:5672, vhost: 'none', user: 'rabbitmq')
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.451 DEBUG 9 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:54.704 [info] <0.707.0> accepting AMQP connection <0.707.0> (172.19.0.9:55072 -> 172.19.0.3:5672)
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.462  INFO 9 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/sso/oauth/token'], Ant [pattern='/sso/oauth/token_key'], Ant [pattern='/sso/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d216ee8, org.springframework.security.web.context.SecurityContextPersistenceFilter@55e88bc, org.springframework.security.web.header.HeaderWriterFilter@20e9c165, org.springframework.security.web.authentication.logout.LogoutFilter@4bcf08ae, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@110318a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c12f54a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@554e9509, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74ee97cb, org.springframework.security.web.session.SessionManagementFilter@417b3642, org.springframework.security.web.access.ExceptionTranslationFilter@1c3a64b6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1791396b]
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:54.708 [error] <0.707.0> Error on AMQP connection <0.707.0> (172.19.0.9:55072 -> 172.19.0.3:5672, user: 'rabbitmq', state: opening):
+[33mrabbitmq_1_afafb8a86a64 |[0m vhost analyzer not found
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.482 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasRole('ROLE_ADMINISTRATOR')', for Ant [pattern='/settings/**']
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.483 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasRole('ROLE_INTERNAL')', for Ant [pattern='/sso/internal/**']
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.483 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for any request
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.484 DEBUG 9 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:54.710 [info] <0.707.0> closing AMQP connection <0.707.0> (172.19.0.9:55072 -> 172.19.0.3:5672, vhost: 'none', user: 'rabbitmq')
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:54.718 [info] <0.713.0> accepting AMQP connection <0.713.0> (172.19.0.9:55076 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:54.722 [error] <0.713.0> Error on AMQP connection <0.713.0> (172.19.0.9:55076 -> 172.19.0.3:5672, user: 'rabbitmq', state: opening):
+[33mrabbitmq_1_afafb8a86a64 |[0m vhost analyzer not found
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.484 DEBUG 9 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.484  INFO 9 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/sso/me/**'], Ant [pattern='/sso/internal/**'], Ant [pattern='/settings/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49322d04, org.springframework.security.web.context.SecurityContextPersistenceFilter@281963c, org.springframework.security.web.header.HeaderWriterFilter@26728255, org.springframework.security.web.authentication.logout.LogoutFilter@7164e28a, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@17d0d3d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a2815cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18fa5af6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b6b746b, org.springframework.security.web.session.SessionManagementFilter@32c8d67, org.springframework.security.web.access.ExceptionTranslationFilter@28100232, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@633c0a61]
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.486 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/**']
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.487 DEBUG 9 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.487 DEBUG 9 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.488  INFO 9 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/saml/sp/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e0f259e, org.springframework.security.web.context.SecurityContextPersistenceFilter@29bf90fc, org.springframework.security.web.header.HeaderWriterFilter@3e1c5e0d, org.springframework.security.web.authentication.logout.LogoutFilter@5c81ddab, org.springframework.security.saml.provider.config.ThreadLocalSamlConfigurationFilter@4fe9adfb, org.springframework.security.saml.provider.config.ThreadLocalSamlConfigurationFilter@f8fe81e, org.springframework.security.saml.provider.service.ServiceProviderMetadataFilter@6ad0cd43, org.springframework.security.saml.provider.service.ServiceProviderMetadataFilter@7de43652, org.springframework.security.saml.provider.service.SamlAuthenticationRequestFilter@7fe0ca60, org.springframework.security.saml.provider.service.SamlAuthenticationRequestFilter@fdf029a, org.springframework.security.saml.provider.service.authentication.SamlAuthenticationResponseFilter@63896cf7, org.springframework.security.saml.provider.service.authentication.SamlAuthenticationResponseFilter@3f838072, org.springframework.security.saml.provider.SamlProviderLogoutFilter@46c9ee28, org.springframework.security.saml.provider.SamlProviderLogoutFilter@31f5ffb9, org.springframework.security.saml.provider.service.SelectIdentityProviderFilter@19b3d3a4, org.springframework.security.saml.provider.service.SelectIdentityProviderFilter@3a9040f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e22d6bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32121140, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33214124, org.springframework.security.web.session.SessionManagementFilter@6f7a65e, org.springframework.security.web.access.ExceptionTranslationFilter@4cd1716d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@394b9e22]
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.489 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/sso/login/**']
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.490 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/epam/**']
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.490 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/info']
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.490 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/health']
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.490 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/api-docs/**']
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.490 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/saml/**']
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.490 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/templates/**']
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.490 DEBUG 9 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for any request
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.491 DEBUG 9 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:54.723 [info] <0.713.0> closing AMQP connection <0.713.0> (172.19.0.9:55076 -> 172.19.0.3:5672, vhost: 'none', user: 'rabbitmq')
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:54.845 [info] <0.719.0> accepting AMQP connection <0.719.0> (172.19.0.9:55088 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:54.849 [error] <0.719.0> Error on AMQP connection <0.719.0> (172.19.0.9:55088 -> 172.19.0.3:5672, user: 'rabbitmq', state: opening):
+[33mrabbitmq_1_afafb8a86a64 |[0m vhost analyzer not found
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:54.850 [info] <0.719.0> closing AMQP connection <0.719.0> (172.19.0.9:55088 -> 172.19.0.3:5672, vhost: 'none', user: 'rabbitmq')
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:55.006 [info] <0.725.0> accepting AMQP connection <0.725.0> (172.19.0.9:55092 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:55.010 [error] <0.725.0> Error on AMQP connection <0.725.0> (172.19.0.9:55092 -> 172.19.0.3:5672, user: 'rabbitmq', state: opening):
+[33mrabbitmq_1_afafb8a86a64 |[0m vhost analyzer not found
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:24:55.011 [info] <0.725.0> closing AMQP connection <0.725.0> (172.19.0.9:55092 -> 172.19.0.3:5672, vhost: 'none', user: 'rabbitmq')
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.491 DEBUG 9 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.491  INFO 9 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21d48c40, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fb9a83c, org.springframework.security.web.header.HeaderWriterFilter@3dc7c5fd, org.springframework.security.web.authentication.logout.LogoutFilter@3aa8c337, org.springframework.web.filter.CompositeFilter@4a10c019, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@517d9cd5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5216532a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37f627d0, org.springframework.security.web.session.SessionManagementFilter@62871522, org.springframework.security.web.access.ExceptionTranslationFilter@2ba0b95f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35451ba6]
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.541  INFO 9 --- [           main] o.s.l.c.support.AbstractContextSource    : Property 'userDn' not set - anonymous context will be used for read-write operations
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.678  INFO 9 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.693  INFO 9 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:54.788  INFO 9 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:55.207  INFO 9 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOAuthSettingsUsingGET_1
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:55.288  INFO 9 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: userUsingGET_1
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:55.290  INFO 9 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: userUsingHEAD_1
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:55.299  INFO 9 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: userUsingPOST_1
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:55.301  INFO 9 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: userUsingPUT_1
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:55.304  INFO 9 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: userUsingPATCH_1
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:55.308  INFO 9 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: userUsingDELETE_1
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:55.314  INFO 9 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: userUsingOPTIONS_1
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:55.318  INFO 9 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: userUsingTRACE_1
+[31mpostgres_1_b561d6613aab |[0m 
+[31mpostgres_1_b561d6613aab |[0m PostgreSQL Database directory appears to contain a database; Skipping initialization
+[31mpostgres_1_b561d6613aab |[0m 
+[31mpostgres_1_b561d6613aab |[0m 2020-08-22 08:24:24.657 UTC [1] LOG:  starting PostgreSQL 12.3 on x86_64-pc-linux-musl, compiled by gcc (Alpine 9.3.0) 9.3.0, 64-bit
+[31mpostgres_1_b561d6613aab |[0m 2020-08-22 08:24:24.658 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[31mpostgres_1_b561d6613aab |[0m 2020-08-22 08:24:24.658 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[31mpostgres_1_b561d6613aab |[0m 2020-08-22 08:24:24.834 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[31mpostgres_1_b561d6613aab |[0m 2020-08-22 08:24:24.883 UTC [20] LOG:  database system was interrupted; last known up at 2020-08-22 08:18:58 UTC
+[31mpostgres_1_b561d6613aab |[0m 2020-08-22 08:24:25.089 UTC [20] LOG:  database system was not properly shut down; automatic recovery in progress
+[31mpostgres_1_b561d6613aab |[0m 2020-08-22 08:24:25.203 UTC [20] LOG:  redo starts at 0/164E030
+[31mpostgres_1_b561d6613aab |[0m 2020-08-22 08:24:25.268 UTC [20] LOG:  invalid record length at 0/1989738: wanted 24, got 0
+[31mpostgres_1_b561d6613aab |[0m 2020-08-22 08:24:25.268 UTC [20] LOG:  redo done at 0/1989700
+[31mpostgres_1_b561d6613aab |[0m 2020-08-22 08:24:25.377 UTC [1] LOG:  database system is ready to accept connections
+[36;1mminio_1_91529202baad |[0m 
+[36;1mminio_1_91529202baad |[0m  You are running an older version of MinIO released 3 months ago 
+[36;1mminio_1_91529202baad |[0m  Update: docker pull minio/minio:RELEASE.2020-08-18T19-41-00Z 
+[36;1mminio_1_91529202baad |[0m 
+[36;1mminio_1_91529202baad |[0m 
+[36;1mminio_1_91529202baad |[0m Endpoint:  http://172.19.0.8:9000  http://127.0.0.1:9000
+[36;1mminio_1_91529202baad |[0m 
+[36;1mminio_1_91529202baad |[0m Browser Access:
+[36;1mminio_1_91529202baad |[0m    http://172.19.0.8:9000  http://127.0.0.1:9000
+[36;1mminio_1_91529202baad |[0m 
+[36;1mminio_1_91529202baad |[0m Object API (Amazon S3 compatible):
+[36;1mminio_1_91529202baad |[0m    Go:         https://docs.min.io/docs/golang-client-quickstart-guide
+[36;1mminio_1_91529202baad |[0m    Java:       https://docs.min.io/docs/java-client-quickstart-guide
+[36;1mminio_1_91529202baad |[0m    Python:     https://docs.min.io/docs/python-client-quickstart-guide
+[36;1mminio_1_91529202baad |[0m    JavaScript: https://docs.min.io/docs/javascript-client-quickstart-guide
+[36;1mminio_1_91529202baad |[0m    .NET:       https://docs.min.io/docs/dotnet-client-quickstart-guide
+[34mgateway_1_ed7b96ae30a4 |[0m time="2020-08-22T08:24:25Z" level=info msg="Configuration loaded from flags."
+[33;1manalyzer_1_da620d9dd565 |[0m *** Starting uWSGI 2.0.18 (64bit) on [Sat Aug 22 08:24:28 2020] ***
+[33;1manalyzer_1_da620d9dd565 |[0m compiled with version: 8.3.0 on 31 July 2020 08:48:13
+[33;1manalyzer_1_da620d9dd565 |[0m os: Linux-5.4.0-42-generic #46-Ubuntu SMP Fri Jul 10 00:24:02 UTC 2020
+[33;1manalyzer_1_da620d9dd565 |[0m nodename: 661c6411a5dc
+[33;1manalyzer_1_da620d9dd565 |[0m machine: x86_64
+[33;1manalyzer_1_da620d9dd565 |[0m clock source: unix
+[33;1manalyzer_1_da620d9dd565 |[0m pcre jit disabled
+[33;1manalyzer_1_da620d9dd565 |[0m detected number of CPU cores: 8
+[33;1manalyzer_1_da620d9dd565 |[0m current working directory: /backend
+[33;1manalyzer_1_da620d9dd565 |[0m detected binary path: /venv/bin/uwsgi
+[33;1manalyzer_1_da620d9dd565 |[0m uWSGI running as root, you can use --uid/--gid/--chroot options
+[33;1manalyzer_1_da620d9dd565 |[0m *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+[33;1manalyzer_1_da620d9dd565 |[0m your memory page size is 4096 bytes
+[33;1manalyzer_1_da620d9dd565 |[0m detected max file descriptor number: 1048576
+[33;1manalyzer_1_da620d9dd565 |[0m lock engine: pthread robust mutexes
+[33;1manalyzer_1_da620d9dd565 |[0m thunder lock: disabled (you can enable it with --thunder-lock)
+[33;1manalyzer_1_da620d9dd565 |[0m uWSGI http bound on :5000 fd 3
+[33;1manalyzer_1_da620d9dd565 |[0m uwsgi socket 0 bound to TCP address :3031 fd 6
+[33;1manalyzer_1_da620d9dd565 |[0m uWSGI running as root, you can use --uid/--gid/--chroot options
+[33;1manalyzer_1_da620d9dd565 |[0m *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+[33;1manalyzer_1_da620d9dd565 |[0m Python version: 3.7.4 (default, Oct 17 2019, 06:10:02)  [GCC 8.3.0]
+[33;1manalyzer_1_da620d9dd565 |[0m PEP 405 virtualenv detected: /venv
+[33;1manalyzer_1_da620d9dd565 |[0m Set PythonHome to /venv
+[33;1manalyzer_1_da620d9dd565 |[0m Python main interpreter initialized at 0x5583604f1260
+[33;1manalyzer_1_da620d9dd565 |[0m uWSGI running as root, you can use --uid/--gid/--chroot options
+[33;1manalyzer_1_da620d9dd565 |[0m *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+[33;1manalyzer_1_da620d9dd565 |[0m python threads support enabled
+[33;1manalyzer_1_da620d9dd565 |[0m your server socket listen backlog is limited to 100 connections
+[33;1manalyzer_1_da620d9dd565 |[0m your mercy for graceful operations on workers is 60 seconds
+[33;1manalyzer_1_da620d9dd565 |[0m mapped 730560 bytes (713 KB) for 32 cores
+[33;1manalyzer_1_da620d9dd565 |[0m *** Operational MODE: preforking+threaded ***
+[33;1manalyzer_1_da620d9dd565 |[0m uWSGI running as root, you can use --uid/--gid/--chroot options
+[33;1manalyzer_1_da620d9dd565 |[0m *** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+[33;1manalyzer_1_da620d9dd565 |[0m *** uWSGI is running in multiple interpreter mode ***
+[33;1manalyzer_1_da620d9dd565 |[0m spawned uWSGI master process (pid: 1)
+[33;1manalyzer_1_da620d9dd565 |[0m spawned uWSGI worker 1 (pid: 6, cores: 8)
+[33;1manalyzer_1_da620d9dd565 |[0m spawned uWSGI worker 2 (pid: 7, cores: 8)
+[33;1manalyzer_1_da620d9dd565 |[0m spawned uWSGI worker 3 (pid: 8, cores: 8)
+[33;1manalyzer_1_da620d9dd565 |[0m spawned uWSGI worker 4 (pid: 9, cores: 8)
+[33;1manalyzer_1_da620d9dd565 |[0m spawned uWSGI http 1 (pid: 10)
+[33;1manalyzer_1_da620d9dd565 |[0m /venv/lib/python3.7/site-packages/sklearn/feature_extraction/text.py:17: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+[33;1manalyzer_1_da620d9dd565 |[0m   from collections import Mapping, defaultdict
+[32;1mindex_1_e88c6d291a08 |[0m time="2020-08-22T08:24:30Z" level=info msg="K8S mode enabled: false"
+[33;1manalyzer_1_da620d9dd565 |[0m /venv/lib/python3.7/site-packages/sklearn/feature_extraction/text.py:17: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+[33;1manalyzer_1_da620d9dd565 |[0m   from collections import Mapping, defaultdict
+[33;1manalyzer_1_da620d9dd565 |[0m /venv/lib/python3.7/site-packages/sklearn/feature_extraction/text.py:17: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+[33;1manalyzer_1_da620d9dd565 |[0m   from collections import Mapping, defaultdict
+[32;1mindex_1_e88c6d291a08 |[0m time="2020-08-22T08:24:30Z" level=info msg="Starting on port 8080"
+[33;1manalyzer_1_da620d9dd565 |[0m /venv/lib/python3.7/site-packages/sklearn/feature_extraction/text.py:17: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+[33;1manalyzer_1_da620d9dd565 |[0m   from collections import Mapping, defaultdict
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,586 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,595 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,613 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,613 - analyzerApp - ERROR - 
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,676 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,677 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,688 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,688 - analyzerApp - ERROR - 
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,781 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,782 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,791 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,791 - analyzerApp - ERROR - 
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,959 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,959 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,962 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:34,962 - analyzerApp - ERROR - 
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,623 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,623 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,686 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,686 - analyzerApp - ERROR - (530, 'NOT_ALLOWED - vhost analyzer not found')
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,695 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,695 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,706 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,706 - analyzerApp - ERROR - (530, 'NOT_ALLOWED - vhost analyzer not found')
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,802 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,803 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,832 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,832 - analyzerApp - ERROR - (530, 'NOT_ALLOWED - vhost analyzer not found')
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,972 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,972 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,978 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:44,978 - analyzerApp - ERROR - (530, 'NOT_ALLOWED - vhost analyzer not found')
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:54,695 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:54,695 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:54,709 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:54,709 - analyzerApp - ERROR - (530, 'NOT_ALLOWED - vhost analyzer not found')
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:54,715 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:54,715 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:54,722 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:54,723 - analyzerApp - ERROR - (530, 'NOT_ALLOWED - vhost analyzer not found')
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:54,840 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:54,840 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:54,850 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:54,850 - analyzerApp - ERROR - (530, 'NOT_ALLOWED - vhost analyzer not found')
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:54,987 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:54,987 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:55,011 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:24:55,011 - analyzerApp - ERROR - (530, 'NOT_ALLOWED - vhost analyzer not found')
+[35;1mdb-scripts_1_5d73960de9b0 |[0m wait-for-it.sh: waiting 15 seconds for postgres:5432
+[35;1mdb-scripts_1_5d73960de9b0 |[0m wait-for-it.sh: postgres:5432 is available after 0 seconds
+[35;1mdb-scripts_1_5d73960de9b0 |[0m no change
+[35;1mselenide-reportportal_db-scripts_1_5d73960de9b0 exited with code 0
+[0m[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:55.434  INFO 9 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+[35muat_1_83f42193d065 |[0m 2020-08-22 08:24:55.439  INFO 9 --- [           main] c.e.r.auth.AuthServerApplication         : Started AuthServerApplication in 29.444 seconds (JVM running for 32.398)
+[36mselenide-reportportal_elasticsearch_1_7c7167020fb5 exited with code 1
+[0m[31;1mapi_1_35fb1bd5ace7 |[0m 
+[31;1mapi_1_35fb1bd5ace7 |[0m     ____                        __  ____             __        __
+[31;1mapi_1_35fb1bd5ace7 |[0m    / __ \___  ____  ____  _____/ /_/ __ \____  _____/ /_____ _/ /
+[31;1mapi_1_35fb1bd5ace7 |[0m   / /_/ / _ \/ __ \/ __ \/ ___/ __/ /_/ / __ \/ ___/ __/ __ `/ /
+[31;1mapi_1_35fb1bd5ace7 |[0m  / _, _/  __/ /_/ / /_/ / /  / /_/ ____/ /_/ / /  / /_/ /_/ / /
+[31;1mapi_1_35fb1bd5ace7 |[0m /_/ |_|\___/ .___/\____/_/   \__/_/    \____/_/   \__/\__,_/_/
+[31;1mapi_1_35fb1bd5ace7 |[0m           /_/
+[31;1mapi_1_35fb1bd5ace7 |[0m                 API Service: 5.3.0
+[31;1mapi_1_35fb1bd5ace7 |[0m                 Built with ♡ by EPAM Systems
+[31;1mapi_1_35fb1bd5ace7 |[0m                 Spring Boot  (v2.2.5.RELEASE)
+[31;1mapi_1_35fb1bd5ace7 |[0m 
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:24:58.162  INFO 6 --- [           main] c.e.t.r.core.configs.ReportPortalApp     : Starting ReportPortalApp on e181a3c26a0a with PID 6 (/service-api-5.3.0-exec.jar started by root in /)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:24:58.164  INFO 6 --- [           main] c.e.t.r.core.configs.ReportPortalApp     : The following profiles are active: default
+[34;1melasticsearch_1_7c7167020fb5 |[0m OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:00.017  INFO 6 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:00.341  INFO 6 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 313ms. Found 30 JPA repository interfaces.
+[34;1melasticsearch_1_7c7167020fb5 |[0m {"type": "server", "timestamp": "2020-08-22T08:25:01,660+0000", "level": "WARN", "component": "o.e.b.ElasticsearchUncaughtExceptionHandler", "cluster.name": "docker-cluster", "node.name": "f6e4e6391df7",  "message": "uncaught exception in thread [main]" , 
+[34;1melasticsearch_1_7c7167020fb5 |[0m "stacktrace": ["org.elasticsearch.bootstrap.StartupException: ElasticsearchException[failed to bind service]; nested: AccessDeniedException[/usr/share/elasticsearch/data/nodes];",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:163) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:150) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:115) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "Caused by: org.elasticsearch.ElasticsearchException: failed to bind service",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:617) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "... 6 more",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "Caused by: java.nio.file.AccessDeniedException: /usr/share/elasticsearch/data/nodes",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116) ~[?:?]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389) ~[?:?]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectory(Files.java:692) ~[?:?]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createAndCheckIsDirectory(Files.java:799) ~[?:?]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectories(Files.java:785) ~[?:?]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.lambda$new$0(NodeEnvironment.java:272) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment$NodeLock.<init>(NodeEnvironment.java:209) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:269) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:278) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34;1melasticsearch_1_7c7167020fb5 |[0m "... 6 more"] }
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:02.757  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:02.763  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:02.767  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@e04ccf8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:02.773  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'userRoleHierarchy' of type [com.epam.ta.reportportal.auth.UserRoleHierarchy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:02.777  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'securityConfiguration' of type [com.epam.ta.reportportal.core.configs.SecurityConfiguration$$EnhancerBySpringCGLIB$$5810ab66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:02.785  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionEvaluator' of type [com.epam.ta.reportportal.auth.permissions.PermissionEvaluatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:02.807  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'projectManagerPermission' of type [com.epam.ta.reportportal.auth.permissions.ProjectManagerPermission] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:02.844  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSourceConfig' of type [com.epam.ta.reportportal.config.DataSourceConfig$$EnhancerBySpringCGLIB$$a79a5e21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:02.877  INFO 6 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:02.976  INFO 6 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:02.977  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dataSource' of type [com.zaxxer.hikari.HikariDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.001  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.018  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.025  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'ACLContext' of type [com.epam.ta.reportportal.core.configs.ACLContext$$EnhancerBySpringCGLIB$$9a79dbbf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.061  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'coffeinCache' of type [org.springframework.cache.caffeine.CaffeineCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.066  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionGrantingStrategy' of type [org.springframework.security.acls.domain.DefaultPermissionGrantingStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.070  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'aclAuthorizationStrategy' of type [com.epam.ta.reportportal.auth.acl.ReportPortalAclAuthorizationStrategyImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.072  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'aclCache' of type [org.springframework.security.acls.domain.SpringCacheBasedAclCache] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.097  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'lookupStrategy' of type [org.springframework.security.acls.jdbc.BasicLookupStrategy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.102  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'aclService' of type [com.epam.ta.reportportal.auth.acl.ReportPortalAclService] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.110  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'aclPermissionEvaluator' of type [org.springframework.security.acls.AclPermissionEvaluator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.111  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'aclFullPermission' of type [com.epam.ta.reportportal.auth.permissions.AclFullPermission] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.115  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'aclReadPermission' of type [com.epam.ta.reportportal.auth.permissions.AclReadPermission] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.118  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'assignedToProjectPermission' of type [com.epam.ta.reportportal.auth.permissions.AssignedToProjectPermission] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.120  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'notCustomerPermission' of type [com.epam.ta.reportportal.auth.permissions.NotCustomerPermission] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.122  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reporterPermission' of type [com.epam.ta.reportportal.auth.permissions.ReporterPermission] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.124  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionEvaluator' of type [com.epam.ta.reportportal.auth.permissions.ReportPortalPermissionEvaluator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.125  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'securityConfiguration.MethodSecurityConfig' of type [com.epam.ta.reportportal.core.configs.SecurityConfiguration$MethodSecurityConfig$$EnhancerBySpringCGLIB$$c5d267cb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.135  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.154  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'jacksonConfiguration' of type [com.epam.ta.reportportal.core.configs.JacksonConfiguration$$EnhancerBySpringCGLIB$$5ebc77dd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.175  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.253  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'jsonConverter' of type [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.264  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'stringConverter' of type [org.springframework.http.converter.StringHttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.269  INFO 6 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'mvcConfig' of type [com.epam.ta.reportportal.core.configs.MvcConfig$$EnhancerBySpringCGLIB$$2a8810cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.785  INFO 6 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8585 (http)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.799  INFO 6 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.799  INFO 6 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.882  INFO 6 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:03.882  INFO 6 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5654 ms
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:04,719 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:04,719 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:04.723 [info] <0.731.0> accepting AMQP connection <0.731.0> (172.19.0.9:55244 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:04.725 [error] <0.731.0> Error on AMQP connection <0.731.0> (172.19.0.9:55244 -> 172.19.0.3:5672, user: 'rabbitmq', state: opening):
+[33mrabbitmq_1_afafb8a86a64 |[0m vhost analyzer not found
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:04,726 - analyzerApp - ERROR - Amqp connection was not established
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:04.726 [info] <0.731.0> closing AMQP connection <0.731.0> (172.19.0.9:55244 -> 172.19.0.3:5672, vhost: 'none', user: 'rabbitmq')
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:04,726 - analyzerApp - ERROR - (530, 'NOT_ALLOWED - vhost analyzer not found')
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:04,731 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:04,732 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:04.736 [info] <0.737.0> accepting AMQP connection <0.737.0> (172.19.0.9:55248 -> 172.19.0.3:5672)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:04.739  INFO 6 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:04.745 [error] <0.737.0> Error on AMQP connection <0.737.0> (172.19.0.9:55248 -> 172.19.0.3:5672, user: 'rabbitmq', state: opening):
+[33mrabbitmq_1_afafb8a86a64 |[0m vhost analyzer not found
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:04,746 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:04,746 - analyzerApp - ERROR - (530, 'NOT_ALLOWED - vhost analyzer not found')
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:04.746 [info] <0.737.0> closing AMQP connection <0.737.0> (172.19.0.9:55248 -> 172.19.0.3:5672, vhost: 'none', user: 'rabbitmq')
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:04.858  INFO 6 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:04,859 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:04,859 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:04.863 [info] <0.743.0> accepting AMQP connection <0.743.0> (172.19.0.9:55260 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:04.866 [error] <0.743.0> Error on AMQP connection <0.743.0> (172.19.0.9:55260 -> 172.19.0.3:5672, user: 'rabbitmq', state: opening):
+[33mrabbitmq_1_afafb8a86a64 |[0m vhost analyzer not found
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:04.867 [info] <0.743.0> closing AMQP connection <0.743.0> (172.19.0.9:55260 -> 172.19.0.3:5672, vhost: 'none', user: 'rabbitmq')
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:04,867 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:04,867 - analyzerApp - ERROR - (530, 'NOT_ALLOWED - vhost analyzer not found')
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:05,019 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:05,019 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:05.027 [info] <0.749.0> accepting AMQP connection <0.749.0> (172.19.0.9:55264 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:05.030 [error] <0.749.0> Error on AMQP connection <0.749.0> (172.19.0.9:55264 -> 172.19.0.3:5672, user: 'rabbitmq', state: opening):
+[33mrabbitmq_1_afafb8a86a64 |[0m vhost analyzer not found
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:05,031 - analyzerApp - ERROR - Amqp connection was not established
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:05,031 - analyzerApp - ERROR - (530, 'NOT_ALLOWED - vhost analyzer not found')
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:05.032 [info] <0.749.0> closing AMQP connection <0.749.0> (172.19.0.9:55264 -> 172.19.0.3:5672, vhost: 'none', user: 'rabbitmq')
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:05.091  INFO 6 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:06.940  INFO 6 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: com.epam.ta.reportportal.commons.JsonbAwarePostgresDialect
+[36melasticsearch_1_7c7167020fb5 |[0m OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[36melasticsearch_1_7c7167020fb5 |[0m {"type": "server", "timestamp": "2020-08-22T08:25:09,284+0000", "level": "WARN", "component": "o.e.b.ElasticsearchUncaughtExceptionHandler", "cluster.name": "docker-cluster", "node.name": "f6e4e6391df7",  "message": "uncaught exception in thread [main]" , 
+[36melasticsearch_1_7c7167020fb5 |[0m "stacktrace": ["org.elasticsearch.bootstrap.StartupException: ElasticsearchException[failed to bind service]; nested: AccessDeniedException[/usr/share/elasticsearch/data/nodes];",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:163) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:150) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:115) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "Caused by: org.elasticsearch.ElasticsearchException: failed to bind service",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:617) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "... 6 more",
+[36melasticsearch_1_7c7167020fb5 |[0m "Caused by: java.nio.file.AccessDeniedException: /usr/share/elasticsearch/data/nodes",
+[36melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116) ~[?:?]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389) ~[?:?]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectory(Files.java:692) ~[?:?]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createAndCheckIsDirectory(Files.java:799) ~[?:?]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectories(Files.java:785) ~[?:?]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.lambda$new$0(NodeEnvironment.java:272) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment$NodeLock.<init>(NodeEnvironment.java:209) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:269) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:278) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[36melasticsearch_1_7c7167020fb5 |[0m "... 6 more"] }
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:09.358  INFO 6 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:09.368  INFO 6 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:09.573  INFO 6 --- [           main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:09.585  INFO 6 --- [           main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:09.585  INFO 6 --- [           main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:09.598  INFO 6 --- [           main] o.s.s.quartz.LocalDataSourceJobStore     : Using db table-based data access locking (synchronization).
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:09.599  INFO 6 --- [           main] o.s.s.quartz.LocalDataSourceJobStore     : JobStoreCMT initialized.
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:09.600  INFO 6 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'reportportal' with instanceId 'api:d648dfedf4ac07df3a8173334479216b'
+[31;1mapi_1_35fb1bd5ace7 |[0m   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+[31;1mapi_1_35fb1bd5ace7 |[0m   NOT STARTED.
+[31;1mapi_1_35fb1bd5ace7 |[0m   Currently in standby mode.
+[31;1mapi_1_35fb1bd5ace7 |[0m   Number of jobs executed: 0
+[31;1mapi_1_35fb1bd5ace7 |[0m   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 1 threads.
+[31;1mapi_1_35fb1bd5ace7 |[0m   Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+[31;1mapi_1_35fb1bd5ace7 |[0m 
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:09.600  INFO 6 --- [           main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'reportportal' initialized from an externally provided properties instance.
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:09.600  INFO 6 --- [           main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:09.600  INFO 6 --- [           main] org.quartz.core.QuartzScheduler          : JobFactory set to: com.epam.ta.reportportal.core.configs.SchedulerConfiguration$2@4e3ffd0
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:10.226 [info] <0.754.0> Adding vhost 'analyzer'
+[34;1mselenide-reportportal_elasticsearch_1_7c7167020fb5 exited with code 1
+[0m[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:10.908 [info] <0.765.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@6c5eef5219da/msg_stores/vhosts/CCCKRGUCI5BC4D7Q237IU7AY5' for vhost 'analyzer' exists
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:10.958 [info] <0.765.0> Starting message stores for vhost 'analyzer'
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:10.959 [info] <0.769.0> Message store "CCCKRGUCI5BC4D7Q237IU7AY5/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:10.960 [info] <0.765.0> Started message store of type transient for vhost 'analyzer'
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:10.960 [info] <0.772.0> Message store "CCCKRGUCI5BC4D7Q237IU7AY5/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:10.961 [warning] <0.772.0> Message store "CCCKRGUCI5BC4D7Q237IU7AY5/msg_store_persistent": rebuilding indices from scratch
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:10.963 [info] <0.765.0> Started message store of type persistent for vhost 'analyzer'
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:10.967 [info] <0.754.0> Setting permissions for 'rabbitmq' in 'analyzer' to '.*', '.*', '.*'
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:12.668  INFO 6 --- [           main] org.pf4j.DefaultPluginStatusProvider     : Enabled plugins: []
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:12.668  INFO 6 --- [           main] org.pf4j.DefaultPluginStatusProvider     : Disabled plugins: []
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:12.670  INFO 6 --- [           main] org.pf4j.DefaultPluginManager            : PF4J version 2.4.0 in 'deployment' mode
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,736 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,736 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.739 [info] <0.799.0> accepting AMQP connection <0.799.0> (172.19.0.9:55358 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.741 [info] <0.799.0> connection <0.799.0> (172.19.0.9:55358 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,745 - analyzerApp - INFO - ExchangeName: analyzer
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,747 - analyzerApp - INFO - Exchange 'analyzer' has been declared
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,748 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.750 [info] <0.813.0> accepting AMQP connection <0.813.0> (172.19.0.9:55362 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.752 [info] <0.813.0> connection <0.813.0> (172.19.0.9:55362 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,753 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,755 - analyzerApp - INFO - Starting waiting for AMQP connection
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:14.755  INFO 6 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'demoDataTaskExecutor'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,755 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,756 - analyzerApp.amqp - INFO - Queue 'index' has been declared pid(7)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.757 [info] <0.828.0> accepting AMQP connection <0.828.0> (172.19.0.9:55366 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.759 [info] <0.832.0> accepting AMQP connection <0.832.0> (172.19.0.9:55370 -> 172.19.0.3:5672)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,760 - analyzerApp.amqp - INFO - started consuming pid(7) on the queue index
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.761 [info] <0.828.0> connection <0.828.0> (172.19.0.9:55366 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.761 [info] <0.832.0> connection <0.832.0> (172.19.0.9:55370 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,763 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.767 [info] <0.850.0> accepting AMQP connection <0.850.0> (172.19.0.9:55374 -> 172.19.0.3:5672)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,769 - analyzerApp.amqp - INFO - Queue 'analyze' has been declared pid(7)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,769 - analyzerApp - INFO - ExchangeName: analyzer
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,770 - analyzerApp - INFO - Exchange 'analyzer' has been declared
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.771 [info] <0.850.0> connection <0.850.0> (172.19.0.9:55374 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,771 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,773 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,774 - analyzerApp.amqp - INFO - started consuming pid(7) on the queue analyze
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.776 [info] <0.865.0> accepting AMQP connection <0.865.0> (172.19.0.9:55378 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.776 [info] <0.876.0> accepting AMQP connection <0.876.0> (172.19.0.9:55382 -> 172.19.0.3:5672)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,777 - analyzerApp.amqp - INFO - Queue 'delete' has been declared pid(7)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,779 - analyzerApp.amqp - INFO - started consuming pid(7) on the queue delete
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.782 [info] <0.876.0> connection <0.876.0> (172.19.0.9:55382 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.782 [info] <0.865.0> connection <0.865.0> (172.19.0.9:55378 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,783 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,783 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.786 [info] <0.900.0> accepting AMQP connection <0.900.0> (172.19.0.9:55388 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.786 [info] <0.903.0> accepting AMQP connection <0.903.0> (172.19.0.9:55390 -> 172.19.0.3:5672)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,790 - analyzerApp.amqp - INFO - Queue 'index' has been declared pid(9)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,799 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.790 [info] <0.900.0> connection <0.900.0> (172.19.0.9:55388 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.790 [info] <0.903.0> connection <0.903.0> (172.19.0.9:55390 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,787 - analyzerApp.amqp - INFO - Queue 'clean' has been declared pid(7)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,804 - analyzerApp.amqp - INFO - started consuming pid(9) on the queue index
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,805 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,808 - analyzerApp.amqp - INFO - Queue 'analyze' has been declared pid(9)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,810 - analyzerApp.amqp - INFO - started consuming pid(7) on the queue clean
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.810 [info] <0.928.0> accepting AMQP connection <0.928.0> (172.19.0.9:55396 -> 172.19.0.3:5672)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,811 - analyzerApp.amqp - INFO - Queue 'search' has been declared pid(7)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.813 [info] <0.928.0> connection <0.928.0> (172.19.0.9:55396 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,813 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,813 - analyzerApp.amqp - INFO - started consuming pid(9) on the queue analyze
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,815 - analyzerApp.amqp - INFO - started consuming pid(7) on the queue search
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.816 [info] <0.941.0> accepting AMQP connection <0.941.0> (172.19.0.9:55400 -> 172.19.0.3:5672)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,817 - analyzerApp.amqp - INFO - Queue 'delete' has been declared pid(9)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.818 [info] <0.941.0> connection <0.941.0> (172.19.0.9:55400 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,820 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,821 - analyzerApp.amqp - INFO - started consuming pid(9) on the queue delete
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.819 [info] <0.949.0> accepting AMQP connection <0.949.0> (172.19.0.9:55402 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.822 [info] <0.949.0> connection <0.949.0> (172.19.0.9:55402 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,823 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.825 [info] <0.964.0> accepting AMQP connection <0.964.0> (172.19.0.9:55406 -> 172.19.0.3:5672)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,825 - analyzerApp.amqp - INFO - Queue 'suggest' has been declared pid(7)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,827 - analyzerApp.amqp - INFO - Queue 'clean' has been declared pid(9)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.832 [info] <0.964.0> connection <0.964.0> (172.19.0.9:55406 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.832 [info] <0.976.0> accepting AMQP connection <0.976.0> (172.19.0.9:55410 -> 172.19.0.3:5672)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,833 - analyzerApp.amqp - INFO - started consuming pid(7) on the queue suggest
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.835 [info] <0.976.0> connection <0.976.0> (172.19.0.9:55410 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,835 - analyzerApp.amqp - INFO - started consuming pid(9) on the queue clean
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,836 - analyzerApp - INFO - Analyzer has started
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,837 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,839 - analyzerApp.amqp - INFO - Queue 'search' has been declared pid(9)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,842 - analyzerApp.amqp - INFO - Queue 'cluster' has been declared pid(7)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,842 - analyzerApp.amqp - INFO - started consuming pid(9) on the queue search
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.849 [info] <0.998.0> accepting AMQP connection <0.998.0> (172.19.0.9:55422 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.851 [info] <0.998.0> connection <0.998.0> (172.19.0.9:55422 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,851 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,853 - analyzerApp.amqp - INFO - started consuming pid(7) on the queue cluster
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,855 - analyzerApp.amqp - INFO - Queue 'suggest' has been declared pid(9)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.855 [info] <0.1009.0> accepting AMQP connection <0.1009.0> (172.19.0.9:55426 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.857 [info] <0.1009.0> connection <0.1009.0> (172.19.0.9:55426 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,858 - analyzerApp - INFO - Analyzer has started
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,859 - analyzerApp.amqp - INFO - started consuming pid(9) on the queue suggest
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,860 - analyzerApp.amqp - INFO - Queue 'cluster' has been declared pid(9)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,861 - analyzerApp.amqp - INFO - started consuming pid(9) on the queue cluster
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,875 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,875 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.877 [info] <0.1022.0> accepting AMQP connection <0.1022.0> (172.19.0.9:55430 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.880 [info] <0.1022.0> connection <0.1022.0> (172.19.0.9:55430 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,885 - analyzerApp - INFO - ExchangeName: analyzer
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,886 - analyzerApp - INFO - Exchange 'analyzer' has been declared
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,887 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.890 [info] <0.1035.0> accepting AMQP connection <0.1035.0> (172.19.0.9:55434 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.896 [info] <0.1035.0> connection <0.1035.0> (172.19.0.9:55434 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,899 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:14.907  WARN 6 --- [           main] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.912 [info] <0.1046.0> accepting AMQP connection <0.1046.0> (172.19.0.9:55438 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.915 [info] <0.1046.0> connection <0.1046.0> (172.19.0.9:55438 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,916 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,918 - analyzerApp.amqp - INFO - Queue 'index' has been declared pid(6)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,919 - analyzerApp.amqp - INFO - Queue 'analyze' has been declared pid(6)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,923 - analyzerApp.amqp - INFO - started consuming pid(6) on the queue analyze
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,924 - analyzerApp.amqp - INFO - started consuming pid(6) on the queue index
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.925 [info] <0.1059.0> accepting AMQP connection <0.1059.0> (172.19.0.9:55442 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.927 [info] <0.1059.0> connection <0.1059.0> (172.19.0.9:55442 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,929 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.934 [info] <0.1070.0> accepting AMQP connection <0.1070.0> (172.19.0.9:55446 -> 172.19.0.3:5672)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,934 - analyzerApp.amqp - INFO - Queue 'delete' has been declared pid(6)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.937 [info] <0.1070.0> connection <0.1070.0> (172.19.0.9:55446 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,938 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,940 - analyzerApp.amqp - INFO - Queue 'clean' has been declared pid(6)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,943 - analyzerApp.amqp - INFO - started consuming pid(6) on the queue clean
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.945 [info] <0.1083.0> accepting AMQP connection <0.1083.0> (172.19.0.9:55450 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.947 [info] <0.1083.0> connection <0.1083.0> (172.19.0.9:55450 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,947 - analyzerApp.amqp - INFO - started consuming pid(6) on the queue delete
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,951 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,954 - analyzerApp.amqp - INFO - Queue 'search' has been declared pid(6)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.956 [info] <0.1094.0> accepting AMQP connection <0.1094.0> (172.19.0.9:55454 -> 172.19.0.3:5672)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,957 - analyzerApp.amqp - INFO - started consuming pid(6) on the queue search
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.959 [info] <0.1094.0> connection <0.1094.0> (172.19.0.9:55454 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,963 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,966 - analyzerApp.amqp - INFO - Queue 'suggest' has been declared pid(6)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,968 - analyzerApp.amqp - INFO - started consuming pid(6) on the queue suggest
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.969 [info] <0.1107.0> accepting AMQP connection <0.1107.0> (172.19.0.9:55458 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:14.971 [info] <0.1107.0> connection <0.1107.0> (172.19.0.9:55458 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,972 - analyzerApp - INFO - Analyzer has started
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,974 - analyzerApp.amqp - INFO - Queue 'cluster' has been declared pid(6)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:14,976 - analyzerApp.amqp - INFO - started consuming pid(6) on the queue cluster
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,039 - analyzerApp - INFO - Starting waiting for AMQP connection
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,039 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.041 [info] <0.1119.0> accepting AMQP connection <0.1119.0> (172.19.0.9:55462 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.044 [info] <0.1119.0> connection <0.1119.0> (172.19.0.9:55462 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,048 - analyzerApp - INFO - ExchangeName: analyzer
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,049 - analyzerApp - INFO - Exchange 'analyzer' has been declared
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,050 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.053 [info] <0.1132.0> accepting AMQP connection <0.1132.0> (172.19.0.9:55466 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.056 [info] <0.1132.0> connection <0.1132.0> (172.19.0.9:55466 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,057 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,059 - analyzerApp.amqp - INFO - Queue 'index' has been declared pid(8)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,062 - analyzerApp.amqp - INFO - started consuming pid(8) on the queue index
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.061 [info] <0.1143.0> accepting AMQP connection <0.1143.0> (172.19.0.9:55470 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.064 [info] <0.1143.0> connection <0.1143.0> (172.19.0.9:55470 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,064 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,067 - analyzerApp.amqp - INFO - Queue 'analyze' has been declared pid(8)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.069 [info] <0.1156.0> accepting AMQP connection <0.1156.0> (172.19.0.9:55474 -> 172.19.0.3:5672)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,075 - analyzerApp.amqp - INFO - started consuming pid(8) on the queue analyze
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.075 [info] <0.1156.0> connection <0.1156.0> (172.19.0.9:55474 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,079 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,081 - analyzerApp.amqp - INFO - Queue 'delete' has been declared pid(8)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,088 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.083 [info] <0.1167.0> accepting AMQP connection <0.1167.0> (172.19.0.9:55478 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.086 [info] <0.1167.0> connection <0.1167.0> (172.19.0.9:55478 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,095 - analyzerApp.amqp - INFO - started consuming pid(8) on the queue delete
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,097 - analyzerApp.amqp - INFO - Queue 'clean' has been declared pid(8)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,101 - analyzerApp.amqp - INFO - started consuming pid(8) on the queue clean
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.102 [info] <0.1180.0> accepting AMQP connection <0.1180.0> (172.19.0.9:55482 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.105 [info] <0.1180.0> connection <0.1180.0> (172.19.0.9:55482 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,106 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,108 - analyzerApp.amqp - INFO - Queue 'search' has been declared pid(8)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.111 [info] <0.1191.0> accepting AMQP connection <0.1191.0> (172.19.0.9:55486 -> 172.19.0.3:5672)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,113 - analyzerApp.amqp - INFO - started consuming pid(8) on the queue search
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.114 [info] <0.1191.0> connection <0.1191.0> (172.19.0.9:55486 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,115 - analyzerApp - INFO - Try connect to amqp://rabbitmq:5672/analyzer?heartbeat=600
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:15.117  INFO 6 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'patternAnalysisTaskExecutor'
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.118 [info] <0.1203.0> accepting AMQP connection <0.1203.0> (172.19.0.9:55490 -> 172.19.0.3:5672)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,120 - analyzerApp.amqp - INFO - Queue 'suggest' has been declared pid(8)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:15.122 [info] <0.1203.0> connection <0.1203.0> (172.19.0.9:55490 -> 172.19.0.3:5672): user 'rabbitmq' authenticated and granted access to vhost 'analyzer'
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,123 - analyzerApp - INFO - Analyzer has started
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,125 - analyzerApp.amqp - INFO - Queue 'cluster' has been declared pid(8)
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,125 - analyzerApp.amqp - INFO - started consuming pid(8) on the queue suggest
+[33;1manalyzer_1_da620d9dd565 |[0m 2020-08-22 08:25:15,128 - analyzerApp.amqp - INFO - started consuming pid(8) on the queue cluster
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:15.418  INFO 6 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'emailExecutorService'
+[31;1mapi_1_35fb1bd5ace7 |[0m WARNING: An illegal reflective access operation has occurred
+[31;1mapi_1_35fb1bd5ace7 |[0m WARNING: Illegal reflective access by net.sf.jasperreports.engine.util.ClassUtils (jar:file:/service-api-5.3.0-exec.jar!/BOOT-INF/lib/jasperreports-6.12.2.jar!/) to constructor com.sun.org.apache.xerces.internal.util.XMLGrammarPoolImpl()
+[31;1mapi_1_35fb1bd5ace7 |[0m WARNING: Please consider reporting this to the maintainers of net.sf.jasperreports.engine.util.ClassUtils
+[31;1mapi_1_35fb1bd5ace7 |[0m WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[31;1mapi_1_35fb1bd5ace7 |[0m WARNING: All illegal access operations will be denied in a future release
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:16.817  WARN 6 --- [           main] n.s.j.engine.xml.JRTextFieldFactory      : The 'isStretchWithOverflow' attribute is deprecated. Use the 'textAdjust' attribute instead.
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:17.178  INFO 6 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'saveLogsTaskExecutor'
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:17.908  INFO 6 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'healthCheckTableExecutor'
+[33melasticsearch_1_7c7167020fb5 |[0m OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:18.108  INFO 6 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:18.237  INFO 6 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: rabbitmq:5672
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:18.257 [info] <0.1216.0> accepting AMQP connection <0.1216.0> (172.19.0.11:48336 -> 172.19.0.3:5672)
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:18.304 [info] <0.1216.0> Connection <0.1216.0> (172.19.0.11:48336 -> 172.19.0.3:5672) has a client-provided name: connectionFactory#1d9bd4da:0
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:18.324  INFO 6 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: connectionFactory#1d9bd4da:0/SimpleConnection@2e29a7d [delegate=amqp://rabbitmq@172.19.0.3:5672/, localPort= 48336]
+[33mrabbitmq_1_afafb8a86a64 |[0m 2020-08-22 08:25:18.318 [info] <0.1216.0> connection <0.1216.0> (172.19.0.11:48336 -> 172.19.0.3:5672 - connectionFactory#1d9bd4da:0): user 'rabbitmq' authenticated and granted access to vhost '/'
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:18.632  INFO 6 --- [           main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (broadcast.events) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:18.632  INFO 6 --- [           main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (broadcast.events.Icgki2hKT9C8S5qRe9S6pg) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:19.398  INFO 6 --- [           main] c.e.t.r.c.c.r.ReportingConfiguration     : Consumer is created, current consumers count is 1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:19.398  INFO 6 --- [           main] c.e.t.r.c.c.r.ReportingConfiguration     : Consumer is created, current consumers count is 2
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:19.398  INFO 6 --- [           main] c.e.t.r.c.c.r.ReportingConfiguration     : Consumer is created, current consumers count is 3
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:19.398  INFO 6 --- [           main] c.e.t.r.c.c.r.ReportingConfiguration     : Consumer is created, current consumers count is 4
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:19.398  INFO 6 --- [           main] c.e.t.r.c.c.r.ReportingConfiguration     : Consumer is created, current consumers count is 5
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:19.399  INFO 6 --- [           main] c.e.t.r.c.c.r.ReportingConfiguration     : Consumer is created, current consumers count is 6
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:19.399  INFO 6 --- [           main] c.e.t.r.c.c.r.ReportingConfiguration     : Consumer is created, current consumers count is 7
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:19.399  INFO 6 --- [           main] c.e.t.r.c.c.r.ReportingConfiguration     : Consumer is created, current consumers count is 8
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:19.399  INFO 6 --- [           main] c.e.t.r.c.c.r.ReportingConfiguration     : Consumer is created, current consumers count is 9
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:19.399  INFO 6 --- [           main] c.e.t.r.c.c.r.ReportingConfiguration     : Consumer is created, current consumers count is 10
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:20.058  WARN 6 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[33melasticsearch_1_7c7167020fb5 |[0m {"type": "server", "timestamp": "2020-08-22T08:25:20,095+0000", "level": "WARN", "component": "o.e.b.ElasticsearchUncaughtExceptionHandler", "cluster.name": "docker-cluster", "node.name": "f6e4e6391df7",  "message": "uncaught exception in thread [main]" , 
+[33melasticsearch_1_7c7167020fb5 |[0m "stacktrace": ["org.elasticsearch.bootstrap.StartupException: ElasticsearchException[failed to bind service]; nested: AccessDeniedException[/usr/share/elasticsearch/data/nodes];",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:163) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:150) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:115) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "Caused by: org.elasticsearch.ElasticsearchException: failed to bind service",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:617) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "... 6 more",
+[33melasticsearch_1_7c7167020fb5 |[0m "Caused by: java.nio.file.AccessDeniedException: /usr/share/elasticsearch/data/nodes",
+[33melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116) ~[?:?]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389) ~[?:?]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectory(Files.java:692) ~[?:?]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createAndCheckIsDirectory(Files.java:799) ~[?:?]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectories(Files.java:785) ~[?:?]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.lambda$new$0(NodeEnvironment.java:272) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment$NodeLock.<init>(NodeEnvironment.java:209) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:269) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:278) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[33melasticsearch_1_7c7167020fb5 |[0m "... 6 more"] }
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:20.326  INFO 6 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path ''
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:20.473  INFO 6 --- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v1/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:20.542  INFO 6 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'autoAnalyzeTaskExecutor'
+[36mselenide-reportportal_elasticsearch_1_7c7167020fb5 exited with code 1
+[0m[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:22.522  WARN 6 --- [ ConnectionPool] okhttp3.OkHttpClient                     : A connection to http://minio:9000/ was leaked. Did you forget to close a response body? To see where this was allocated, set the OkHttpClient logger level to FINE: Logger.getLogger(OkHttpClient.class.getName()).setLevel(Level.FINE);
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:23.400  INFO 6 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34b56a5a, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c9ed40, org.springframework.security.web.header.HeaderWriterFilter@331b0bfd, org.springframework.security.web.authentication.logout.LogoutFilter@66a5cbe5, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@2eb6e166, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23c3f787, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b0bcea5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@509e4bc4, org.springframework.security.web.session.SessionManagementFilter@12dcfa6a, org.springframework.security.web.access.ExceptionTranslationFilter@749054a3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ef6a063]
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:23.672  INFO 6 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:23.676  INFO 6 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:23.773  INFO 6 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.007  INFO 6 --- [           main] org.jooq.Constants                       : 
+[31;1mapi_1_35fb1bd5ace7 |[0m                                       
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@        @@        @@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@        @@        @@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@        @@  @  @  @@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@        @@        @@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[31;1mapi_1_35fb1bd5ace7 |[0m @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.12.4
+[31;1mapi_1_35fb1bd5ace7 |[0m                                       
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.097  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getActivitiesUsingGET_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.143  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllowableIssueTypesUsingGET_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.159  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getSetOfIntegrationSystemFieldsUsingGET_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.292  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getGlobalIntegrationsUsingGET_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.299  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getProjectIntegrationsUsingGET_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.304  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: testIntegrationConnectionUsingGET_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.403  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: finishLaunchUsingPUT_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.462  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: mergeLaunchesUsingPOST_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.465  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: startLaunchUsingPOST_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.493  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createLogUsingPOST_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.497  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createLogUsingPOST_2
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.499  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createLogUsingPOST_3
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.565  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteProjectUsingDELETE_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.621  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getProjectUsersUsingGET_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.712  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: bulkUpdateUsingPUT_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.722  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: finishTestItemUsingPUT_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.725  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAttributeKeysUsingGET_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.730  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAttributeValuesUsingGET_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.764  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getTestItemsUsingGET_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.773  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getTestItemsUsingGET_2
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.784  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: startChildItemUsingPOST_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.786  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: startRootItemUsingPOST_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.836  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getMyselfUsingGET_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.912  INFO 6 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getWidgetUsingGET_1
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.932  INFO 6 --- [           main] c.e.t.r.c.c.SchedulerConfiguration$1     : Starting Quartz Scheduler now
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.941  INFO 6 --- [           main] o.s.s.quartz.LocalDataSourceJobStore     : ClusterManager: detected 1 failed or restarted instances.
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.941  INFO 6 --- [           main] o.s.s.quartz.LocalDataSourceJobStore     : ClusterManager: Scanning for instance "api:be54bd8f18ffb28b850a5f26edc58212"'s failed in-progress jobs.
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:24.943  INFO 6 --- [           main] org.quartz.core.QuartzScheduler          : Scheduler reportportal_$_api:d648dfedf4ac07df3a8173334479216b started.
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:25.001  INFO 6 --- [portal_Worker-1] c.epam.ta.reportportal.job.CleanLogsJob  : Cleaning outdated logs has been started
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:25.214  INFO 6 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8585 (http) with context path ''
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:25.218  INFO 6 --- [           main] c.e.t.r.core.configs.ReportPortalApp     : Started ReportPortalApp in 27.999 seconds (JVM running for 30.002)
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:25.258 ERROR 6 --- [           main] c.e.t.r.f.d.minio.MinioDataStore         : Unable to find file 'keystore/migration'
+[31;1mapi_1_35fb1bd5ace7 |[0m 
+[31;1mapi_1_35fb1bd5ace7 |[0m io.minio.errors.ErrorResponseException: The specified key does not exist.
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at io.minio.MinioClient.executeReq(MinioClient.java:1220)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at io.minio.MinioClient.execute(MinioClient.java:1082)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at io.minio.MinioClient.executeGet(MinioClient.java:1339)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at io.minio.MinioClient.getObject(MinioClient.java:1854)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at io.minio.MinioClient.getObject(MinioClient.java:1647)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at com.epam.ta.reportportal.filesystem.distributed.minio.MinioDataStore.load(MinioDataStore.java:83)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at com.epam.ta.reportportal.core.events.handler.IntegrationSecretsMigrationHandler.migrate(IntegrationSecretsMigrationHandler.java:77)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:305)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:190)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:153)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.boot.context.event.EventPublishingRunListener.running(EventPublishingRunListener.java:103)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.boot.SpringApplicationRunListeners.running(SpringApplicationRunListeners.java:77)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at com.epam.ta.reportportal.core.configs.ReportPortalApp.main(ReportPortalApp.java:37)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+[31;1mapi_1_35fb1bd5ace7 |[0m 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:52)
+[31;1mapi_1_35fb1bd5ace7 |[0m 
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:25.258  INFO 6 --- [           main] c.e.h.IntegrationSecretsMigrationHandler : Secrets migration is not needed
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:25.396  INFO 6 --- [gs-job-thread-1] c.epam.ta.reportportal.job.CleanLogsJob  : Cleaning outdated logs for project 1 has been finished. Total logs removed: 0
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:25.396  INFO 6 --- [gs-job-thread-0] c.epam.ta.reportportal.job.CleanLogsJob  : Cleaning outdated logs for project 2 has been finished. Total logs removed: 0
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:25.409  INFO 6 --- [portal_Worker-1] c.e.t.r.job.CleanScreenshotsJob          : Cleaning outdated screenshots has been started
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:25.438  INFO 6 --- [portal_Worker-1] c.e.t.reportportal.job.CleanLaunchesJob  : Cleaning outdated launches has been started
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:25.488  INFO 6 --- [portal_Worker-1] c.e.t.r.job.InterruptBrokenLaunchesJob   : Interrupt broken launches job has been started
+[31;1mapi_1_35fb1bd5ace7 |[0m 2020-08-22 08:25:25.516  INFO 6 --- [portal_Worker-1] c.e.t.r.job.CleanExpiredCreationBidsJob  : Cleaning expired user creation bids finished. Deleted 0 bids
+[32melasticsearch_1_7c7167020fb5 |[0m OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[32melasticsearch_1_7c7167020fb5 |[0m {"type": "server", "timestamp": "2020-08-22T08:25:36,714+0000", "level": "WARN", "component": "o.e.b.ElasticsearchUncaughtExceptionHandler", "cluster.name": "docker-cluster", "node.name": "f6e4e6391df7",  "message": "uncaught exception in thread [main]" , 
+[32melasticsearch_1_7c7167020fb5 |[0m "stacktrace": ["org.elasticsearch.bootstrap.StartupException: ElasticsearchException[failed to bind service]; nested: AccessDeniedException[/usr/share/elasticsearch/data/nodes];",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:163) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:150) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:115) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "Caused by: org.elasticsearch.ElasticsearchException: failed to bind service",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:617) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "... 6 more",
+[32melasticsearch_1_7c7167020fb5 |[0m "Caused by: java.nio.file.AccessDeniedException: /usr/share/elasticsearch/data/nodes",
+[32melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116) ~[?:?]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389) ~[?:?]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectory(Files.java:692) ~[?:?]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createAndCheckIsDirectory(Files.java:799) ~[?:?]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectories(Files.java:785) ~[?:?]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.lambda$new$0(NodeEnvironment.java:272) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment$NodeLock.<init>(NodeEnvironment.java:209) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:269) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:278) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[32melasticsearch_1_7c7167020fb5 |[0m "... 6 more"] }
+[33mselenide-reportportal_elasticsearch_1_7c7167020fb5 exited with code 1
+[0m[35melasticsearch_1_7c7167020fb5 |[0m OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[35melasticsearch_1_7c7167020fb5 |[0m {"type": "server", "timestamp": "2020-08-22T08:26:06,405+0000", "level": "WARN", "component": "o.e.b.ElasticsearchUncaughtExceptionHandler", "cluster.name": "docker-cluster", "node.name": "f6e4e6391df7",  "message": "uncaught exception in thread [main]" , 
+[35melasticsearch_1_7c7167020fb5 |[0m "stacktrace": ["org.elasticsearch.bootstrap.StartupException: ElasticsearchException[failed to bind service]; nested: AccessDeniedException[/usr/share/elasticsearch/data/nodes];",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:163) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:150) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:115) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "Caused by: org.elasticsearch.ElasticsearchException: failed to bind service",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:617) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "... 6 more",
+[35melasticsearch_1_7c7167020fb5 |[0m "Caused by: java.nio.file.AccessDeniedException: /usr/share/elasticsearch/data/nodes",
+[35melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116) ~[?:?]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389) ~[?:?]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectory(Files.java:692) ~[?:?]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createAndCheckIsDirectory(Files.java:799) ~[?:?]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectories(Files.java:785) ~[?:?]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.lambda$new$0(NodeEnvironment.java:272) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment$NodeLock.<init>(NodeEnvironment.java:209) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:269) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:278) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[35melasticsearch_1_7c7167020fb5 |[0m "... 6 more"] }
+[32mselenide-reportportal_elasticsearch_1_7c7167020fb5 exited with code 1
+[0m[31melasticsearch_1_7c7167020fb5 |[0m OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[31melasticsearch_1_7c7167020fb5 |[0m {"type": "server", "timestamp": "2020-08-22T08:27:01,405+0000", "level": "WARN", "component": "o.e.b.ElasticsearchUncaughtExceptionHandler", "cluster.name": "docker-cluster", "node.name": "f6e4e6391df7",  "message": "uncaught exception in thread [main]" , 
+[31melasticsearch_1_7c7167020fb5 |[0m "stacktrace": ["org.elasticsearch.bootstrap.StartupException: ElasticsearchException[failed to bind service]; nested: AccessDeniedException[/usr/share/elasticsearch/data/nodes];",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:163) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:150) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:115) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "Caused by: org.elasticsearch.ElasticsearchException: failed to bind service",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:617) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "... 6 more",
+[31melasticsearch_1_7c7167020fb5 |[0m "Caused by: java.nio.file.AccessDeniedException: /usr/share/elasticsearch/data/nodes",
+[31melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116) ~[?:?]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389) ~[?:?]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectory(Files.java:692) ~[?:?]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createAndCheckIsDirectory(Files.java:799) ~[?:?]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectories(Files.java:785) ~[?:?]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.lambda$new$0(NodeEnvironment.java:272) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment$NodeLock.<init>(NodeEnvironment.java:209) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:269) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:278) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[31melasticsearch_1_7c7167020fb5 |[0m "... 6 more"] }
+[35mselenide-reportportal_elasticsearch_1_7c7167020fb5 exited with code 1
+[0m[34melasticsearch_1_7c7167020fb5 |[0m OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[34melasticsearch_1_7c7167020fb5 |[0m {"type": "server", "timestamp": "2020-08-22T08:28:05,082+0000", "level": "WARN", "component": "o.e.b.ElasticsearchUncaughtExceptionHandler", "cluster.name": "docker-cluster", "node.name": "f6e4e6391df7",  "message": "uncaught exception in thread [main]" , 
+[34melasticsearch_1_7c7167020fb5 |[0m "stacktrace": ["org.elasticsearch.bootstrap.StartupException: ElasticsearchException[failed to bind service]; nested: AccessDeniedException[/usr/share/elasticsearch/data/nodes];",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:163) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:150) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:115) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "Caused by: org.elasticsearch.ElasticsearchException: failed to bind service",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:617) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "... 6 more",
+[34melasticsearch_1_7c7167020fb5 |[0m "Caused by: java.nio.file.AccessDeniedException: /usr/share/elasticsearch/data/nodes",
+[34melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.translateToIOException(UnixException.java:90) ~[?:?]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116) ~[?:?]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389) ~[?:?]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectory(Files.java:692) ~[?:?]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createAndCheckIsDirectory(Files.java:799) ~[?:?]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at java.nio.file.Files.createDirectories(Files.java:785) ~[?:?]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.lambda$new$0(NodeEnvironment.java:272) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment$NodeLock.<init>(NodeEnvironment.java:209) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:269) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:278) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.node.Node.<init>(Node.java:258) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:221) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:349) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:159) ~[elasticsearch-7.3.0.jar:7.3.0]",
+[34melasticsearch_1_7c7167020fb5 |[0m "... 6 more"] }
+[31mselenide-reportportal_elasticsearch_1_7c7167020fb5 exited with code 1
+[0m
